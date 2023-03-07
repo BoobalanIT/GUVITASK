@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+  <form action="php/login.php" method="post">
+   <div class="container">
+    <h1>L O G I N</h1>
+     <label for="uname">Email:</label>
+     <input type="email" placeholder="Enter your email" name="email" required><br><br>
+     <label for="psw">Password:</label>
+     <input type="password" placeholder="Enter Password" name="password" required>    
+     <input type="submit" onclick="login()" value="Login">
+     Don't you have an account? <a id="login" href="register.html"target="blank"> Sign up</a>
+     
+   </div>
+     
+   </div>
+ </form>
+  <script src="js/login.js"></script>
+</body>
+</html>

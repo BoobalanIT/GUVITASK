@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: center;
+}
+h1{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin-top: auto;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  body {
+    margin: 10%;
+    width: auto;
+    padding: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;  
+    background: url("../assets/Register.jpg");
+    }
+  label {
+    margin-top: 5px;
+  }
+  
+  input[type="email"]
+  {
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    margin-bottom: auto;
+    margin-top: auto;
+    width: 40vh;
+    margin: 8px auto;
+
+
+  }
+
+  input[type="password"]
+   {
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    margin-top: auto;
+    margin: auto;
+    width: 40vh;
+    margin: 8px auto;
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 40vh;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 15px;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  input{
+    width: 100%;
+    margin: 5% auto;
+    margin-bottom:center;
+    border: none;
+    outline: none;
+  }

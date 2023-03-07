@@ -1,0 +1,31 @@
+    body {
+      height: center;
+      font-family: Arial, Helvetica, sans-serif;
+      width: auto;
+      padding: 20px;
+      margin: 50px;
+      display:flex;
+      justify-content: center;
+      align-items: 100vh;  
+      background: url("../assets/index.jpg");
+      background-size: cover;
+
+      }
+      .container{ 
+        width: 20vh; 
+        position: absolute;
+        display: flex;
+        position: center;
+        border: none;
+        padding: 60px 200px;
+      }
+   h1{
+    color: rgb(0, 172, 40);
+    text-align: center;
+   }
+  a{
+    color: rgb(170, 180, 188);
+    font-size: 25px;
+    text-align: center;
+    margin: 0px auto;
+  }

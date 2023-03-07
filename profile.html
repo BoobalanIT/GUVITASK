@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet"href="css/profile.css">
+</head>
+<body>
+    <div class="profile-page">
+        <h1>Profile Page</h1>
+        <div class="user-details">
+          <h2>User Details</h2>
+          <form action="php/profile.php" method="post">
+            <label>Name:</label>
+            <input type="text" name="name" required> <br>
+            <label for="DOB">Date of Birth:</label><br>
+            <input type="text" name="dob" id="dob"><br> 
+            <label>Gender:</label>
+            <input type="text" name="gender" required> <br>
+            <label>Location:</label>
+            <input type="text" name="location" required> <br>
+            <input type="submit" onclick="profile()" value="Submit">
+          </form>
+        </div>
+      </div>
+      <script src="js/profile.js"></script>
+    
+</body>
+</html>

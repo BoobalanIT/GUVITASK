@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: center;
+}
+h1{
+  text-align: center;
+  justify-content: center;
+  margin-top: auto;
+  padding: 5px;
+  display: flex;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  body {
+    margin: 1%;
+    width: center;
+    padding: 40px;
+    display:flex;
+    justify-content: center;
+    align-items: center;  
+    background: url("../assets/Register.jpg");
+    background-size: cover;
+  }
+  label {
+    margin-top: 10px;
+  }
+  
+  input[type="text"]
+  {
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    width: 100%;
+    margin: 2px;
+  }
+  /* input[type="email"],
+  input[type="password"]
+   {
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    margin-top: auto;
+    margin: 5px;
+    width: auto;
+  } */
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    width:100%;
+    border-radius: 40vh;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 2px;
+    margin-left: 5px;
+    margin-top: 10px;
+
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  input{
+    width: 100%;
+    margin: 2px;
+    margin-bottom:center;
+    border: none;
+    outline: none;
+  }
+  h2{
+    text-align: center;
+    font-size: large;
+  }
