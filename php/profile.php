@@ -1,29 +1,28 @@
-<?php 
+<?php
 
-// Connect to the database
-$db = mysqli_connect("localhost", "user", "password", "database_name");
+//connect to the mongodb
+$mongo_client = new MongoClient("mongodb://localhost:27017");
 
-if (isset($_POST['submit_update'])) {
-    // Get the values from the form
-    $firstname = $_POST['name'];
-    $dob = $_POST['dob'];
-    $gender =$['gender']
-    $location = $_POST['location'];
-   
-    
-    // Get the user ID from the session
-    $user_id = $_SESSION['user_id'];
-    
-    // Update the user info in the database
-    $query = "UPDATE users SET  firstname = '$name', dob= '$dob', addres  = '$location',  WHERE id = '$user_id'";
-    mysqli_query($db, $query);
-    
-    // Redirect the user to the profile page
-    header("Location: profile.php");
-}
+//select the database
+$db = $mongo_client->mydatabase;
 
-// Get the user info from the database
-$query = "SELECT * FROM users WHERE id = '$user_id'";
-$result = mysqli_query($db, $query);
-$user = mysqli_fetch_assoc($result);
+//select the collection
+$collection = $db->users;
+
+//connect to the redis
+$redis_client = new Redis();
+$redis_client->connect("127.0.0.1", 6379);
+
+//retrieve the user from redis
+$user_id = $redis_client->get("user_id");
+
+//find the user in the mongodb
+$user = $collection->findOne(array("_id" => $user_id));
+
+//display the user profile
+echo "Name: " . $user['name'] . "<br>";
+echo "DOB " . $user['DOB'] . "<br>";
+echo "gender: " . $user['gender'] . "<br>";
+echo "location: " . $user['location'] . "<br>";
+
 ?>
